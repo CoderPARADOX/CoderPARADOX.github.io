@@ -7,7 +7,12 @@
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			<link rel="shortcut icon" href="images/M.png" type="image/x-icon">		
 			<title>M.C.A code & photography</title>
-			
+
+			<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+			<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+			<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+			<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 						
 						<style>
 						
@@ -33,173 +38,19 @@
 			  height:70px;
 			  margin-right: 20px;
 			}
+						
 
-<!--
-			@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
-
-			* {
-			  margin: 0;
-			  padding: 0;
-			  box-sizing: border-box;
-			}
-
-			body {
-			  font: 14px/1 'Open Sans', sans-serif;
-			  color: #555;
-			 /* background: #e5e5e5;*/
-			}
-
-			.gallery {
-			  width: auto;
-			  margin: 0 auto;
-			  padding: 5px;
-			  background: #4d4d4d;
-			  box-shadow: 0 1px 2px rgba(0,0,0,.3);
-			}
-
-			.gallery > div {
-			  position: relative;
-			  float: left;
-			  padding: 6px;
-			}
-
-			.gallery > div > img {
-			  display: block;
-			  width: 200px;
-			  transition: .1s transform;
-			  transform: translateZ(0); /* hack */
-			}
-
-			.gallery > div:hover {
-			  z-index: 1;
-			}
-
-			.gallery > div:hover > img {
-			  transform: scale(1.7,1.7);
-			  transition: .3s transform;
-			}
-
-			.cf:before, .cf:after {
-			  display: table;
-			  content: "";
-			  line-height: 0;
-			}
-
-			.cf:after {
-			  clear: both;
-			}
-
-			h1 {
-			  margin: 40px 0;
-			  font-size: 30px;
-			  font-weight: 300;
-			  text-align: center;
-			}-->
-			
-			
-			
-			
-			
-			* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
 				
 				</style>
-									  
+
+  
+				<style>
+			.swiper-container {
+	width: 600px;
+	height: 300px;
+  }
+
+				</style>									  
 			</head>
  <body>
  
@@ -214,7 +65,7 @@ img {vertical-align: middle;}
 					</ul>
 		
 		
-<!--<h1>Photography</h1><!--Added by mehmet can altin
+<!--<h1>Photography</h1>Added by mehmet can altin
 
 		<div class="gallery cf">
 				  <div>
@@ -248,72 +99,56 @@ img {vertical-align: middle;}
 		
 		
 		
-		<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="img_nature_wide.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="img_snow_wide.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="sharing/ay.png" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
+		<div class="swiper-container">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+			  <!-- Slides -->
+			  <div class="swiper-slide"><img src="sharing/gol.png"/>Slide 1</div>
+			  <div class="swiper-slide"><img src="sharing/sunset.png"/>Slide 2</div>
+			  <div class="swiper-slide"><img src="sharing/sky.png"/>Slide 3</div>
+			  ...
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+		  
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		  
+			<!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
+		  </div>
 
 
 <h1 class="display-15 text-center text-dark"> ░ ALL RIGHT RESERVED  © 2021</h1>
 
 
-   <script >
-   
-   src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"
-   var slideIndex = 1;
-showSlides(slideIndex);
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"> </script>
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  <script >
+  const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-   
-   </script>
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+</script>
+
   </body>
 </html>
